@@ -1,128 +1,48 @@
 {
-  "OliveCafe" : {
-    "name":"OliveCafe",
-    "coords":{
-      "lat": "-41.294367",
-      "lng": "174.7727376"
-    }
-  },
-  "Lorettas" : {
-    "name":"Lorettas",
-    "coords":{
-      "lat": "-41.2943047",
-      "lng": "174.7729893"
-    }
-  },
-  "FiveBoroughs" : {
-    "name":"FiveBoroughs",
-    "coords":{
-      "lat": "-41.2942769",
-      "lng": "174.7827873"
-    }
-  },
-  "SweetMothersKitchen" : {
-    "name":"SweetMothersKitchen",
-    "coords":{
-      "lat": "-41.2941928",
-      "lng": "174.7809912"
-    }
-  },
-  "OrientalKingdom" : {
-    "name":"OrientalKingdom",
-    "coords":{
-      "lat": "-41.2925079",
-      "lng": "174.7735683"
-    }
-  },
-  "MemphisBelle" : {
-    "name":"MemphisBelle",
-    "coords":{
-      "lat": "-41.2919467",
-      "lng": "174.7751762"
-    }
-  },
-  "DragonsChineseRestaurant" : {
-    "name":"DragonsChineseRestaurant",
-    "coords":{
-      "lat": "-41.2929957",
-      "lng": "174.779299"
-    }
-  },
-  "Ortega" : {
-    "name":"Ortega",
-    "coords":{
-      "lat": "-41.2943496",
-      "lng": "174.7826809"
-    }
-  },
-  "Nandos" : {
-    "name":"Nandos",
-    "coords":{
-      "lat": "-41.2926388",
-      "lng": "174.7773071"
-    }
-  },
-  "BigThumb" : {
-    "name":"BigThumb",
-    "coords":{
-      "lat": "-41.2928983",
-      "lng": "174.780499"
-    }
-  },
-  "CrabShack" : {
-    "name":"CrabShack",
-    "coords":{
-      "lat": "-41.2846051",
-      "lng": "174.7768819"
-    }
-  },
-  "Valentines" : {
-    "name":"Valentines",
-    "coords":{
-      "lat": "-41.2242033",
-      "lng": "174.8721997"
-    }
-  },
-  "MemphisBelle" : {
-    "name":"MemphisBelle",
-    "coords":{
-      "lat": "-41.2919467",
-      "lng": "174.7751762"
-    }
-  },
-  "MemphisBelle" : {
-    "name":"MemphisBelle",
-    "coords":{
-      "lat": "-41.2919467",
-      "lng": "174.7751762"
-    }
-  },
-  "MemphisBelle" : {
-    "name":"MemphisBelle",
-    "coords":{
-      "lat": "-41.2919467",
-      "lng": "174.7751762"
-    }
-  },
-  "MemphisBelle" : {
-    "name":"MemphisBelle",
-    "coords":{
-      "lat": "-41.2919467",
-      "lng": "174.7751762"
-    }
-  },
-  "MemphisBelle" : {
-    "name":"MemphisBelle",
-    "coords":{
-      "lat": "-41.2919467",
-      "lng": "174.7751762"
-    }
-  },
-  "MemphisBelle" : {
-    "name":"MemphisBelle",
-    "coords":{
-      "lat": "-41.2919467",
-      "lng": "174.7751762"
-    }
-  }
+  "places":[
+    "Olive Cafe",
+    "Lorettas",
+    "Five Boroughs",
+    "Sweet Mothers",
+    "Oriental Kingdom",
+    "Memphis Belle",
+    "Dragons",
+    "Ortega",
+    "Nandos",
+    "Big Thumb",
+    "crab shack",
+    "Valentines",
+    "Dynasty",
+    "Burger King",
+    "Mekong Cafe",
+    "The Oaks",
+    "Viva Mexico Restaurant",
+    "Olive Cafe",
+    "Abrakebabra",
+    "Little India",
+    "Mexico",
+    "Customs Brew Bar",
+    "Six Barrel Cafe",
+    "Husk",
+    "Puro Chile",
+    "Cicio Cacio",
+    "Enigma",
+    "Joe's Garage",
+    "Prefab",
+    "Lone Star",
+    "Monsoon poon",
+    "Beach babylon",
+    "Kilim",
+    "Buddha Stix",
+    "Aroy",
+    "Forage"
+    "Subway",
+    "Indian Taj",
+    "Sweet Mother's Kitchen",
+    "Grill Meats Beer",
+    "Portlander",
+    "El Matador",
+    "Ekim Burger",
+    "Counter Culture"
+  ]
 }

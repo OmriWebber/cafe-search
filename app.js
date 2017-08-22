@@ -11,6 +11,7 @@ app.use(function(request, reponse, next){
 app.use(express.static("./public"));
 
 app.use('/packages', express.static(path.join(__dirname, 'node_modules/')));
+app.use('/data', express.static(path.join(__dirname, 'data/')));
 
 app.listen(3000);
 

@@ -1,7 +1,7 @@
 var accessToken, fbPageID, position, map;
 
 function initMap() {
-  var center = {lat: -25.363, lng: 131.044};
+  var center = {lat: -41.2932875, lng: 174.7837708};
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 5,
     center: center
@@ -75,7 +75,6 @@ $(document).ready(function(){
       url: "https://graph.facebook.com/v2.10/" + fbPageID + "?fields=name%2Clocation%2Cabout%2Coverall_star_rating%2Crating_count%2Cprice_range%2Cfood_styles&access_token="+accessToken,
       dataType: "jsonp",
       success: function(dataFromFacebook){
-        var position = [dataFromFacebook.location.latitude, dataFromFacebook.location.longitude];
         console.log(dataFromFacebook);
         $("#correctFB").show();
         $("#placeTitle").text(dataFromFacebook.name);

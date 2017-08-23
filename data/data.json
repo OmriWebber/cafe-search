@@ -3,10 +3,10 @@
     {
       "name":"Olive Cafe",
       "fbID":"CafeOlive",
-      "coords":[
-        "-41.294367",
-        "174.7727376"
-      ]
+      "coords":{
+        "lat":"-41.294367",
+        "lng":"174.7727376"
+      }
     },
     {
       "name":"Lorettas",

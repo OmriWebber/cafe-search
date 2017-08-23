@@ -10,16 +10,20 @@
   </head>
   <body>
 
-    <div id="sidebar">
+    <div id="sidebar" class="animated">
       <h3>Where To Eat</h3>
       <hr>
-      <ul id="placesList" class="animated">
+      <ul id="placesList">
       </ul>
-      <div id="placeInfo" class="animated">
-        <h4 id="placeTitle"></h4>
-        <p id="placeDescription"></p>
-        <!-- Add other things that we want to display -->
-      </div>
+    </div>
+    <div id="placeInfo" class="animated">
+
+      <p id="error"></p>
+      <h4 id="placeTitle"></h4>
+      <p id="placeDescription"></p>
+      <!-- Add other things that we want to display -->
+
+      <button id="backToList" class="btn btn-default"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back to List</button>
     </div>
     <div id="map"></div>
 

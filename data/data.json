@@ -1,5 +1,6 @@
 {
-  "places": [{
+  "places": [
+    {
       "name":"Olive Cafe",
       "fbID":"OliveCafe",
       "coords":{
@@ -16,40 +17,40 @@
       }
     },
     {
-      "name":"FiveBoroughs",
-      "fbID":"",
+      "name":"Five Boroughs",
+      "fbID":"fiveboroughsnz",
       "coords":{
         "lat": "-41.2942769",
         "lng": "174.7827873"
       }
     },
     {
-      "name":"SweetMothersKitchen",
-      "fbID":"",
+      "name":"Sweet Mothers Kitchen",
+      "fbID":"Sweet-Mothers-Kitchen-196714513687573",
       "coords":{
         "lat": "-41.2941928",
         "lng": "174.7809912"
       }
     },
     {
-      "name":"OrientalKingdom",
-      "fbID":"",
+      "name":"Oriental Kingdom",
+      "fbID":"null",
       "coords":{
         "lat": "-41.2925079",
         "lng": "174.7735683"
       }
     },
     {
-      "name":"MemphisBelle",
-      "fbID":"",
+      "name":"Memphis Belle",
+      "fbID":"memphisbellecoffeehouse",
       "coords":{
         "lat": "-41.2919467",
         "lng": "174.7751762"
       }
     },
     {
-      "name":"DragonsChineseRestaurant",
-      "fbID":"",
+      "name":"Dragons Chinese Restaurant",
+      "fbID":"WellingtonDragons",
       "coords":{
         "lat": "-41.2929957",
         "lng": "174.779299"
@@ -57,7 +58,7 @@
     },
     {
       "name":"Ortega",
-      "fbID":"",
+      "fbID":"null",
       "coords":{
         "lat": "-41.2943496",
         "lng": "174.7826809"
@@ -65,23 +66,23 @@
     },
     {
       "name":"Nandos",
-      "fbID":"",
+      "fbID":"NZNandos",
       "coords":{
         "lat": "-41.2926388",
         "lng": "174.7773071"
       }
     },
     {
-      "name":"BigThumb",
-      "fbID":"",
+      "name":"Big Thumb",
+      "fbID":"BigThumbChineseRestaurant",
       "coords":{
         "lat": "-41.2928983",
         "lng": "174.780499"
       }
     },
     {
-      "name":"CrabShack",
-      "fbID":"",
+      "name":"Crab Shack",
+      "fbID":"null",
       "coords":{
         "lat": "-41.2846051",
         "lng": "174.7768819"
@@ -89,10 +90,11 @@
     },
     {
       "name":"Valentines",
-      "fbID":"",
+      "fbID":"null",
       "coords":{
         "lat": "-41.2242033",
         "lng": "174.8721997"
       }
-    }]
-  }
+    }
+  ]
+}

@@ -33,14 +33,20 @@ body, html {
 			padding: 20px;
 		}
 	}
+}
 
-	#placeInfo {
-		display: none;
+#placeInfo {
+	display: none;
+	position: absolute;
+	width: 30%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	-webkit-animation-duration: 0.5s;
+
+	#backToList {
 		position: absolute;
-		top: 70px;
-		width: 30%;
-		text-align: center;
-		-webkit-animation-duration: 0.5s;
+		bottom:0px;
 	}
 }
 

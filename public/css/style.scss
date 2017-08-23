@@ -13,6 +13,7 @@ body, html {
 	float: left;
 	background-color: white;
 	overflow-x: scroll;
+	z-index:2;
 	h3 {
 		text-align: center;
 	}
@@ -37,20 +38,59 @@ body, html {
 
 #placeInfo {
 	display: none;
-	position: absolute;
+	position: relative;
+	z-index:1;
 	width: 30%;
 	height: 100%;
 	float: left;
 	text-align: center;
 	-webkit-animation-duration: 0.5s;
 
-	#backToList {
-		position: absolute;
-		bottom:0px;
+	.container {
+		width: 100%;
+		#backToList {
+			position: relative;
+			width: 80%;
+		}
+
+		#placeTitle {
+			margin: 0;
+			padding: 20px;
+			border-bottom: 2px solid grey;
+		}
+
+		.rating {
+			margin-bottom: 10px;
+
+			p {
+				font-size:30px;
+				margin: 0px;
+			}
+			p.votes {
+				margin-top: -7px;
+				font-size:12px;
+				color: grey;
+			}
+		}
+
+		.price {
+
+			#price {
+				color: green;
+				font-size: 26px;
+			}
+		}
+
+		#foodTypes {
+			list-style-type: none;
+			padding: 0px;
+		}
 	}
+
 }
 
 #map {
+	z-index:9999;
 	width: 70%;
 	height: 100%;
 	float: left;

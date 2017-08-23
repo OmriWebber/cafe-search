@@ -2,11 +2,11 @@
   "places": [
     {
       "name":"Olive Cafe",
-      "fbID":"OliveCafe",
-      "coords":{
-        "lat": "-41.294367",
-        "lng": "174.7727376"
-      }
+      "fbID":"CafeOlive",
+      "coords":[
+        "-41.294367",
+        "174.7727376"
+      ]
     },
     {
       "name":"Lorettas",
@@ -26,7 +26,7 @@
     },
     {
       "name":"Sweet Mothers Kitchen",
-      "fbID":"Sweet-Mothers-Kitchen-196714513687573",
+      "fbID":"196714513687573",
       "coords":{
         "lat": "-41.2941928",
         "lng": "174.7809912"

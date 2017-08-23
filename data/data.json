@@ -1,0 +1,100 @@
+{
+  "places": [
+    {
+      "name":"Olive Cafe",
+      "fbID":"CafeOlive",
+      "coords":[
+        "-41.294367",
+        "174.7727376"
+      ]
+    },
+    {
+      "name":"Lorettas",
+      "fbID":"null",
+      "coords":{
+        "lat": "-41.2943047",
+        "lng": "174.7729893"
+      }
+    },
+    {
+      "name":"Five Boroughs",
+      "fbID":"fiveboroughsnz",
+      "coords":{
+        "lat": "-41.2942769",
+        "lng": "174.7827873"
+      }
+    },
+    {
+      "name":"Sweet Mothers Kitchen",
+      "fbID":"196714513687573",
+      "coords":{
+        "lat": "-41.2941928",
+        "lng": "174.7809912"
+      }
+    },
+    {
+      "name":"Oriental Kingdom",
+      "fbID":"null",
+      "coords":{
+        "lat": "-41.2925079",
+        "lng": "174.7735683"
+      }
+    },
+    {
+      "name":"Memphis Belle",
+      "fbID":"memphisbellecoffeehouse",
+      "coords":{
+        "lat": "-41.2919467",
+        "lng": "174.7751762"
+      }
+    },
+    {
+      "name":"Dragons Chinese Restaurant",
+      "fbID":"WellingtonDragons",
+      "coords":{
+        "lat": "-41.2929957",
+        "lng": "174.779299"
+      }
+    },
+    {
+      "name":"Ortega",
+      "fbID":"null",
+      "coords":{
+        "lat": "-41.2943496",
+        "lng": "174.7826809"
+      }
+    },
+    {
+      "name":"Nandos",
+      "fbID":"NZNandos",
+      "coords":{
+        "lat": "-41.2926388",
+        "lng": "174.7773071"
+      }
+    },
+    {
+      "name":"Big Thumb",
+      "fbID":"BigThumbChineseRestaurant",
+      "coords":{
+        "lat": "-41.2928983",
+        "lng": "174.780499"
+      }
+    },
+    {
+      "name":"Crab Shack",
+      "fbID":"null",
+      "coords":{
+        "lat": "-41.2846051",
+        "lng": "174.7768819"
+      }
+    },
+    {
+      "name":"Valentines",
+      "fbID":"null",
+      "coords":{
+        "lat": "-41.2242033",
+        "lng": "174.8721997"
+      }
+    }
+  ]
+}

@@ -4,15 +4,43 @@
     <meta charset="utf-8">
     <title>Cafe Search</title>
     <link rel="stylesheet" href="packages/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="packages/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="packages/animate.css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <div id="sidebar"></div>
+    <div id="sidebar" class="animated">
+      <h3>Where To Eat</h3>
+      <hr>
+      <ul id="placesList">
+      </ul>
+    </div>
+    <div id="placeInfo" class="animated">
+      <div class="container">
+        <h3 id="placeTitle"></h3>
+        <p id="error"></p>
+        <div id="correctFB">
+          <p id="placeDescription"></p>
+          <ul id="foodTypes"></ul>
+          <div class="rating">
+            <p><span id="rating"></span>/5</p>
+            <p class="votes"><span id="totalRatings"></span> votes</p>
+          </div>
+          <div class="price">
+            <p id="price"></p>
+          </div>
+        </div>
+
+        <!-- Add other things that we want to display -->
+
+        <button id="backToList" class="btn btn-default"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back to List</button>
+      </div>
+    </div>
     <div id="map"></div>
 
-
-    <script src="packages/jquery/dist/jquery.min.js" charset="utf-8"></script>
-    <script src="js/script.js" charset="utf-8"></script>
+    <script src="packages/jquery/dist/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2o1Xiv4UvoZRhkC21SqFonubOXehIR-A&callback=initMap"></script>
   </body>
 </html>

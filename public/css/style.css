@@ -1,6 +1,97 @@
-* {
+body, html {
 		padding: 0px;
 		margin: 0px;
 		box-sizing: border-box;
 		font-family: sans-serif;
+		height: 100%;
+}
+
+#sidebar {
+		width: 30%;
+		height: 100%;
+		float: left;
+		background-color: white;
+		overflow-x: scroll;
+		z-index: 2;
+}
+
+#sidebar h3 {
+		text-align: center;
+}
+
+#sidebar hr {
+		margin-bottom: 0px;
+		border-top: 2px solid grey;
+}
+
+#sidebar #placesList {
+		padding: 0px;
+		-vendor-animation-duration: 0.5s;
+}
+
+#sidebar #placesList .place {
+		border-bottom: 1px solid grey;
+		cursor: pointer;
+		list-style-type: none;
+		text-align: center;
+		padding: 20px;
+}
+
+#placeInfo {
+		display: none;
+		position: relative;
+		z-index: 1;
+		width: 30%;
+		height: 100%;
+		float: left;
+		text-align: center;
+		-webkit-animation-duration: 0.5s;
+}
+
+#placeInfo .container {
+		width: 100%;
+}
+
+#placeInfo .container #backToList {
+		position: relative;
+		width: 80%;
+}
+
+#placeInfo .container #placeTitle {
+		margin: 0;
+		padding: 20px;
+		border-bottom: 2px solid grey;
+}
+
+#placeInfo .container .rating {
+		margin-bottom: 10px;
+}
+
+#placeInfo .container .rating p {
+		font-size: 30px;
+		margin: 0px;
+}
+
+#placeInfo .container .rating p.votes {
+		margin-top: -7px;
+		font-size: 12px;
+		color: grey;
+}
+
+#placeInfo .container .price #price {
+		color: green;
+		font-size: 26px;
+}
+
+#placeInfo .container #foodTypes {
+		list-style-type: none;
+		padding: 0px;
+}
+
+#map {
+		z-index: 9999;
+		width: 70%;
+		height: 100%;
+		float: left;
+		background-color: blue;
 }

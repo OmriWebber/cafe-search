@@ -4,15 +4,27 @@
     <meta charset="utf-8">
     <title>Cafe Search</title>
     <link rel="stylesheet" href="packages/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="packages/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="packages/animate.css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <div id="sidebar"></div>
+    <div id="sidebar">
+      <h3>Where To Eat</h3>
+      <hr>
+      <ul id="placesList" class="animated">
+      </ul>
+      <div id="placeInfo" class="animated">
+        <h4 id="placeTitle"></h4>
+        <p id="placeDescription"></p>
+        <!-- Add other things that we want to display -->
+      </div>
+    </div>
     <div id="map"></div>
 
 
-    <script src="packages/jquery/dist/jquery.min.js" charset="utf-8"></script>
-    <script src="js/script.js" charset="utf-8"></script>
+    <script src="packages/jquery/dist/jquery.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

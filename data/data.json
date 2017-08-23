@@ -82,9 +82,9 @@
     },
     {
       "name":"Crab Shack",
-      "fbID":"null",
+      "fbID":"331499616953493",
       "coords":{
-        "lat": "-41.2846051",
+        "lat": "-41.284836",
         "lng": "174.7768819"
       }
     },
@@ -95,6 +95,255 @@
         "lat": "-41.2242033",
         "lng": "174.8721997"
       }
+    },
+    {
+      "name":"Dynasty",
+      "fbID":"189212677803387",
+      "coords":{
+        "lat": "-41.13442",
+        "lng": "174.83939"
+      }
+    },
+    {
+      "name":"Burger King",
+      "fbID":"BurgerKingNZMannersMall",
+      "coords":{
+        "lat": "-41.290974",
+        "lng": "174.77686"
+      }
+    },
+    {
+      "name":"Mekong Cafe",
+      "fbID":"MekongcafeNZ",
+      "coords":{
+        "lat": "-41.2949399",
+        "lng": "174.77577"
+      }
+    },
+    {
+      "name":"The Oaks Satay Noodle House",
+      "fbID":"151124838097",
+      "coords":{
+        "lat": "-41.29155",
+        "lng": "174.7769"
+      }
+    },
+    {
+      "name":"Viva Mexico Restaurant",
+      "fbID":"185318438283867",
+      "coords":{
+        "lat": "-41.3128699",
+        "lng": "174.77976"
+      }
+    },
+    {
+      "name":"Abrakebabra",
+      "fbID":"kebabcentral.co.nz",
+      "coords":{
+        "lat": "-41.29101",
+        "lng": "174.77638"
+      }
+    },
+    {
+      "name":"littleindia",
+      "fbID":"littleindiablairstreet",
+      "coords":{
+        "lat": "-41.29313",
+        "lng": "174.7831"
+      }
+    },
+    {
+      "name":"Brew'd",
+      "fbID":"BrewdBoulcott",
+      "coords":{
+        "lat": "-41.20322",
+        "lng": "174.92389"
+      }
+    },
+    {
+      "name":"Six Barrel Soda",
+      "fbID":"sixbarrelsodaco",
+      "coords":{
+        "lat": "-41.291923136739",
+        "lng": "174.77753552636"
+      }
+    },
+    {
+      "name":"Husk",
+      "fbID":"huskbar",
+      "coords":{
+        "lat": "-41.29296",
+        "lng": "174.77514"
+      }
+    },
+    {
+      "name":"Cicio Cacio Osteria",
+      "fbID":"osteriaciciocacio",
+      "coords":{
+        "lat": "-41.31315",
+        "lng": "174.77985"
+      }
+    },
+    {
+      "name":"Puro Chile",
+      "fbID":"purochilewellington",
+      "coords":{
+        "lat": "-41.286792086875",
+        "lng": "174.77620026562"
+      }
+    },
+    {
+      "name":"Enigma",
+      "fbID":"EnigmaCafeNZ",
+      "coords":{
+        "lat": "-41.2924995",
+        "lng": "174.7793274"
+      }
+    },
+    {
+      "name":"Joes Garage",
+      "fbID":"JoesGarageWellington",
+      "coords":{
+        "lat": "-41.29247",
+        "lng": "174.7819"
+      }
+    },
+    {
+      "name":"Prefab",
+      "fbID":"PrefabEatery",
+      "coords":{
+        "lat": "-41.29548",
+        "lng": "174.77858"
+      }
+    },
+    {
+      "name":"Lone Star",
+      "fbID":"lonestarpetone",
+      "coords":{
+        "lat": "-41.22641",
+        "lng": "174.88199"
+      }
+    },
+    {
+      "name":"Monsoon Poon",
+      "fbID":"132096953529993",
+      "coords":{
+        "lat": "-41.29298",
+        "lng": "174.78321"
+      }
+    },
+    {
+      "name":"Beach Babylon",
+      "fbID":"beachbabylon",
+      "coords":{
+        "lat": "-41.2915",
+        "lng": "174.7940999"
+      }
+    },
+    {
+      "name":"Kilim Cafe",
+      "fbID":"KilimCafePetone",
+      "coords":{
+        "lat": "-41.22398",
+        "lng": "174.87461"
+      }
+    },
+    {
+      "name":"Buddha Stix",
+      "fbID":"297547646942699",
+      "coords":{
+        "lat": "-41.22726",
+        "lng": "174.8841799"
+      }
+    },
+    {
+      "name":"Aroy",
+      "fbID":"251418521586076",
+      "coords":{
+        "lat": "-41.29237",
+        "lng": "174.77642"
+      }
+    },
+    {
+      "name":"Forage",
+      "fbID":"ForageStore",
+      "coords":{
+        "lat": "-37.78141",
+        "lng": "175.2966"
+      }
+    },
+    {
+      "name":"Subway",
+      "fbID":"null",
+      "coords":{
+        "lat": "-41.2932858",
+        "lng": "174.775016"
+      }
+    },
+    {
+      "name":"Indian TAJ",
+      "fbID":"265830216761103",
+      "coords":{
+        "lat": "-41.29394",
+        "lng": "174.78215"
+      }
+    },
+    {
+      "name":"Grill Meats Beer",
+      "fbID":"grillmeatsbeer.co.nz",
+      "coords":{
+        "lat": "-41.29547",
+        "lng": "174.77465"
+      }
+    },
+    {
+      "name":"Portlander",
+      "fbID":"PortlanderBarAndGrill",
+      "coords":{
+        "lat": "-41.281144864981",
+        "lng": "174.77829610462"
+      }
+    },
+    {
+      "name":"El Matador",
+      "fbID":"ElMatadorWellington",
+      "coords":{
+        "lat": "-41.29495",
+        "lng": "174.77464"
+      }
+    },
+    {
+      "name":"Ekim Burgers",
+      "fbID":"201864206519644",
+      "coords":{
+        "lat": "-41.296235531441",
+        "lng": "174.77419123097"
+      }
+    },
+    {
+      "name":"Counter Culture Board Game Cafe",
+      "fbID":"countercultureboardgamecafe",
+      "coords":{
+        "lat": "-41.294881523152",
+        "lng": "174.77239608765"
+      }
+    },
+    {
+      "name":"Burger Liquor",
+      "fbID":"burgerliquor",
+      "coords":{
+        "lat": "-41.28991",
+        "lng": "174.77448"
+      }
+    },
+    {
+      "name":"Japanese Thai restaurant",
+      "fbID":"126348454241896",
+      "coords":{
+        "lat": "-41.13744",
+        "lng": "174.84073"
+      }
     }
+
   ]
 }

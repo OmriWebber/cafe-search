@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Cafe Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="packages/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="packages/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="packages/animate.css/animate.min.css">
@@ -11,25 +12,37 @@
   <body>
 
     <div id="sidebar" class="animated">
-      <h3>Where To Eat</h3>
+      <h3>Cafes & Resturaunts</h3>
       <hr>
       <ul id="placesList">
       </ul>
     </div>
     <div id="placeInfo" class="animated">
       <div class="container">
-        <h3 id="placeTitle"></h3>
+        <h2 id="placeTitle"></h2>
         <p id="error"></p>
         <div id="correctFB">
           <p id="placeDescription"></p>
+          <hr>
+          <h3>Food Types</h3>
           <ul id="foodTypes"></ul>
+          <hr>
           <div class="rating">
+          <h3>Rating</h3>
             <p><span id="rating"></span>/5</p>
             <p class="votes"><span id="totalRatings"></span> votes</p>
           </div>
+          <hr>
           <div class="price">
+            <h3>Price</h3>
             <p id="price"></p>
           </div>
+          <hr>
+          <div class="street">
+          	<h3>Address</h3>
+          	<p id="street"></p>
+          </div>
+          <hr>
         </div>
 
         <!-- Add other things that we want to display -->

@@ -1,9 +1,10 @@
-var accessToken, fbPageID, position, map;
+var accessToken, fbPageID, position, map, marker;
 
 function initMap() {
   var center = {lat: -41.2932875, lng: 174.7837708};
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 5,
+    minZoom: 5,
     center: center
   });
 }
@@ -22,6 +23,7 @@ $(document).ready(function(){
     dataType: "json",
     success: function(data){
       console.log(data.places);
+      // console.log(dataFromFacebook.location.street);
       for (var i = 0; i < data.places.length; i++) {
         $("#placesList").append("<li class='place'>" + data.places[i].name + "</li>");
       }
@@ -38,7 +40,7 @@ $(document).ready(function(){
                 $("#correctFB").hide();
                 $('#sidebar').removeClass('slideInLeft').delay(100).addClass('slideOutLeft').delay(500).hide();
                 $('#placeInfo').removeClass('slideOutRight').delay(100).show().addClass('slideInRight');
-                position = data.places[i].coords;
+                position = {"lat": Number(data.places[i].coords.lat), "lng": Number(data.places[i].coords.lng)};
                 showMarker(position);
                 return;
               } else {
@@ -76,28 +78,34 @@ $(document).ready(function(){
       dataType: "jsonp",
       success: function(dataFromFacebook){
         console.log(dataFromFacebook);
-        $("#correctFB").show();
-        $("#placeTitle").text(dataFromFacebook.name);
-        if(!dataFromFacebook.about){
-          $("#placeDescription").text(dataFromFacebook.name + " does not have a description.");
+        if(dataFromFacebook.error){
+          console.log(dataFromFacebook.error);
         } else {
-          $("#placeDescription").text(dataFromFacebook.about);
-        }
-        if(dataFromFacebook.food_styles){
-          $("#foodTypes").show();
-          $("#foodTypes").empty();
-          for (var i = 0; i < dataFromFacebook.food_styles.length; i++) {
-            $("#foodTypes").append("<li>" + dataFromFacebook.food_styles[i] + "</li>");
+          position = {"lat": dataFromFacebook.location.latitude, "lng": dataFromFacebook.location.longitude};
+          $("#correctFB").show();
+          $("#placeTitle").text(dataFromFacebook.name);
+          if(!dataFromFacebook.about){
+            $("#placeDescription").text(dataFromFacebook.name + " does not have a description.");
+          } else {
+            $("#placeDescription").text(dataFromFacebook.about);
           }
-        } else {
-          $("#foodTypes").hide();
+          if(dataFromFacebook.food_styles){
+            $("#foodTypes").show();
+            $("#foodTypes").empty();
+            for (var i = 0; i < dataFromFacebook.food_styles.length; i++) {
+              $("#foodTypes").append("<li>" + dataFromFacebook.food_styles[i] + "</li>");
+            }
+          } else {
+            $("#foodTypes").hide();
+          }
+          $("#rating").text(dataFromFacebook.overall_star_rating);
+          $("#totalRatings").text(dataFromFacebook.rating_count);
+          $("#price").text(dataFromFacebook.price_range);
+          $("#street").text(dataFromFacebook.location.street);
+          $('#sidebar').removeClass('slideInLeft').delay(100).addClass('slideOutLeft').delay(500).hide();
+          $('#placeInfo').removeClass('slideOutRight').delay(100).show().addClass('slideInRight');
+          showMarker(position, dataFromFacebook);
         }
-        $("#rating").text(dataFromFacebook.overall_star_rating);
-        $("#totalRatings").text(dataFromFacebook.rating_count);
-        $("#price").text(dataFromFacebook.price_range);
-        $('#sidebar').removeClass('slideInLeft').delay(100).addClass('slideOutLeft').delay(500).hide();
-        $('#placeInfo').removeClass('slideOutRight').delay(100).show().addClass('slideInRight');
-        showMarker(position);
       },
       error: function(){
         console.log("Couldn't get Facebook data");
@@ -105,8 +113,33 @@ $(document).ready(function(){
     });
   }
 
-  function showMarker(position){
+  function showMarker(position, dataFromFacebook){
     console.log(position);
+    if (marker) {
+      marker.setPosition(position);
+      map.panTo(position);
+      map.setZoom(15);
+    } else {
+      marker = new google.maps.Marker({
+        position: position,
+        map: map
+      });
+      map.panTo(position);
+      map.setZoom(15);
+    }
   }
 
+
 });
+
+
+
+
+
+
+
+
+
+
+
+

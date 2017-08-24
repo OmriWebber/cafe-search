@@ -125,3 +125,31 @@ body, html {
 	float: left;
 	background-color: white;
 }
+
+#sidebar{
+	background-color: #6872D8;
+}
+
+#placeInfo{
+	background-color: #6872D8;
+}
+
+#backToList{
+	background-color: #5756A8;
+}
+#backToList:hover{
+	background-color: white;
+}
+
+.btn-default {
+	color: white;
+	border: none;
+}
+
+.btn-default:hover {
+	color: #5756A8;
+}
+
+button{
+	color: white;
+}

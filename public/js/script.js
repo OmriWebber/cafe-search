@@ -121,6 +121,7 @@ $(document).ready(function() {
           $("#rating").text(dataFromFacebook.overall_star_rating);
           $("#totalRatings").text(dataFromFacebook.rating_count);
           $("#price").text(dataFromFacebook.price_range);
+          $("#street").text(dataFromFacebook.location.street);
           $('#sidebar').removeClass('slideInLeft').delay(100).addClass('slideOutLeft').delay(500).hide();
           $('#placeInfo').removeClass('slideOutRight').delay(100).show().addClass('slideInRight');
           showMarker(position, dataFromFacebook);
@@ -182,4 +183,17 @@ $(document).ready(function() {
     }
   }
 
+
 });
+
+
+
+
+
+
+
+
+
+
+
+

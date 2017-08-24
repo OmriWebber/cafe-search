@@ -12,6 +12,7 @@ app.use(express.static("./public"));
 
 app.use('/packages', express.static(path.join(__dirname, 'node_modules/')));
 app.use('/data', express.static(path.join(__dirname, 'data/')));
+app.use('/config', express.static(path.join(__dirname, '/')));
 
 app.listen(3000);
 

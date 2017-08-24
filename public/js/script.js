@@ -75,7 +75,7 @@ $(document).ready(function() {
 
   function showInfo() {
     $.ajax({
-      url: "./config.json",
+      url: "config/config.json",
       dataType: "json",
       success: function(configData) {
         accessToken = configData.fAccessToken;

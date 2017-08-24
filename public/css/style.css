@@ -1,173 +1,212 @@
 body, html {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  height: 100%;
-  color: white; }
+		padding: 0px;
+		margin: 0px;
+		box-sizing: border-box;
+		font-family: 'Open Sans', sans-serif;
+		height: 100%;
+		color: white;
+}
 
 .errorOverlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 99999; }
-  .errorOverlay p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    font-size: 30px; }
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 99999;
+}
+
+.errorOverlay p {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		text-align: center;
+		font-size: 30px;
+}
 
 #sidebar {
-  width: 40%;
-  height: 100%;
-  float: left;
-  background-color: white;
-  overflow-y: scroll;
-  z-index: 2;
-  -webkit-box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75); }
+		width: 40%;
+		height: 100%;
+		float: left;
+		background-color: white;
+		overflow-y: scroll;
+		z-index: 2;
+		-webkit-box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75);
+}
 
 .logoBlock {
-  background-color: #6872D8;
-  width: 100%;
-  padding: 30px 10px;
-  text-align: center; }
-  .logoBlock img {
-    margin: 0 auto; }
-  .logoBlock h3 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px; }
+		background-color: #6872D8;
+		width: 100%;
+		padding: 30px 10px;
+		text-align: center;
+}
+
+.logoBlock img {
+		margin: 0 auto;
+}
+
+.logoBlock h3 {
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 50px;
+}
 
 #sidebar hr {
-  margin-bottom: 0px;
-  border-top: 2px solid white; }
+		margin-bottom: 0px;
+		border-top: 2px solid white;
+}
 
 #sidebar #placesList {
-  padding: 0px;
-  -vendor-animation-duration: 0.5s; }
+		padding: 0px;
+		-vendor-animation-duration: 0.5s;
+}
 
 #sidebar #placesList .place {
-  cursor: pointer;
-  list-style-type: none;
-  text-align: center;
-  padding: 40px 0; }
+		cursor: pointer;
+		list-style-type: none;
+		text-align: center;
+		padding: 40px 0;
+}
 
 #placesList li {
-  width: 50%;
-  /*display: inline-block;*/
-  float: left;
-  /*border: solid white 1px;*/
-  color: #5756A8;
-  background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, white 50%, #6872d8 50%);
-  transition: all 0.2s; }
+		width: 50%;
+		/*display: inline-block;*/
+		float: left;
+		/*border: solid white 1px;*/
+		color: #5756A8;
+		background-size: 100% 200%;
+		background-image: linear-gradient(to bottom, white 50%, #6872D8 50%);
+		transition: all 0.2s;
+}
+
 #placesList :hover {
-  background-position: 0 -100%;
-  color: white; }
+		background-position: 0 -100%;
+		color: white;
+}
 
 #placeInfo {
-  display: none;
-  position: relative;
-  overflow-y: scroll;
-  z-index: 1;
-  width: 40%;
-  height: 100%;
-  float: left;
-  text-align: center;
-  -webkit-animation-duration: 0.5s;
-  -webkit-box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75); }
+		display: none;
+		position: relative;
+		overflow-y: scroll;
+		z-index: 1;
+		width: 40%;
+		height: 100%;
+		float: left;
+		text-align: center;
+		-webkit-animation-duration: 0.5s;
+		-webkit-box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.75);
+}
 
 #placeInfo .container {
-  width: 100%;
-  padding: 0px;
-  text-align: center; }
+		width: 100%;
+		padding: 0px;
+		text-align: center;
+}
 
 #placeInfo .container #backToList {
-  position: relative;
-  width: 80%;
-  margin: 10px auto; }
+		position: relative;
+		width: 80%;
+		margin: 10px auto;
+}
 
 #placeInfo .container #error {
-  margin: 30px auto;
-  width: 80%; }
+		margin: 30px auto;
+		width: 80%;
+}
 
 #placeInfo .container #placeTitle {
-  margin: 0;
-  padding: 20px;
-  border-bottom: 2px solid white; }
+		margin: 0;
+		padding: 20px;
+		border-bottom: 2px solid white;
+}
 
 #placeInfo .container p#placeDescription {
-  width: 80%;
-  margin: 30px auto; }
+		width: 80%;
+		margin: 30px auto;
+}
 
 #placeInfo .container hr {
-  margin: 0px; }
+		margin: 0px;
+}
 
 #placeInfo .container p#placeDescription {
-  width: 80%;
-  margin: 30px auto; }
+		width: 80%;
+		margin: 30px auto;
+}
 
 #placeInfo .container hr {
-  margin: 0px; }
+		margin: 0px;
+}
 
 #placeInfo .container .rating {
-  margin-bottom: 10px;
-  margin: 30px auto;
-  width: 80%; }
+		margin-bottom: 10px;
+		margin: 30px auto;
+		width: 80%;
+}
 
 #placeInfo .container .rating p {
-  font-size: 30px; }
+		font-size: 30px;
+}
 
 #placeInfo .container .rating p.votes {
-  margin-top: -7px;
-  font-size: 12px;
-  color: white; }
+		margin-top: -7px;
+		font-size: 12px;
+		color: white;
+}
 
 #placeInfo .container .price {
-  width: 80%;
-  margin: 30px auto; }
+		width: 80%;
+		margin: 30px auto;
+}
 
 #placeInfo .container .price {
-  width: 80%;
-  margin: 30px auto; }
+		width: 80%;
+		margin: 30px auto;
+}
 
 #placeInfo .container .price #price {
-  color: #68D0EA;
-  font-size: 26px; }
+		color: #68D0EA;
+		font-size: 26px;
+}
 
 #placeInfo .container #foodTypes {
-  list-style-type: none;
-  padding: 0px;
-  margin: 30px auto; }
+		list-style-type: none;
+		padding: 0px;
+		margin: 30px auto;
+}
 
 #map {
-  z-index: 9999;
-  width: 60%;
-  height: 100%;
-  float: left;
-  background-color: white; }
+		z-index: 9999;
+		width: 60%;
+		height: 100%;
+		float: left;
+		background-color: white;
+}
 
 #placeInfo {
-  background-color: #6872D8; }
+		background-color: #6872D8;
+}
 
 #backToList {
-  background-color: #5756A8; }
+		background-color: #5756A8;
+}
 
 #backToList:hover {
-  background-color: white; }
+		background-color: white;
+}
 
 .btn-default {
-  color: white;
-  border: none; }
+		color: white;
+		border: none;
+}
 
 .btn-default:hover {
-  color: #5756A8; }
+		color: #5756A8;
+}
 
 button {
-  color: white; }
+		color: white;
+}

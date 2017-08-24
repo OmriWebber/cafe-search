@@ -1,4 +1,4 @@
-var accessToken, fbPageID, position, map, marker, userLocation, routeExist = false;
+var accessToken, fbPageID, position, map, marker, userLocation, routeExist = false, directionsService, directionsDisplay;
 
 function initMap() {
   var center = {
@@ -18,7 +18,6 @@ if (navigator.geolocation) {
       "lat": position.coords.latitude,
       "lng": position.coords.longitude
     };
-    console.log(userLocation);
     $(".errorOverlay").fadeOut();
   })
 } else {
@@ -38,7 +37,6 @@ $(document).ready(function() {
     url: "/data/data.json",
     dataType: "json",
     success: function(data) {
-      console.log(data.places);
       for (var i = 0; i < data.places.length; i++) {
         $("#placesList").append("<li class='place'>" + data.places[i].name + "</li>");
       }
@@ -47,7 +45,6 @@ $(document).ready(function() {
         for (var i = 0; i < data.places.length; i++) {
           if (places == data.places[i].name) {
             fbPageID = data.places[i].fbID;
-            console.log(fbPageID);
             if (fbPageID == "null") {
               $("#placeDescription").empty();
               $("#placeTitle").text(data.places[i].name);
@@ -95,7 +92,6 @@ $(document).ready(function() {
       url: "https://graph.facebook.com/v2.10/" + fbPageID + "?fields=name%2Clocation%2Cabout%2Coverall_star_rating%2Crating_count%2Cprice_range%2Cfood_styles&access_token=" + accessToken,
       dataType: "jsonp",
       success: function(dataFromFacebook) {
-        console.log(dataFromFacebook);
         if (dataFromFacebook.error) {
           console.log(dataFromFacebook.error);
         } else {
@@ -135,8 +131,7 @@ $(document).ready(function() {
   }
 
   function showMarker(position, dataFromFacebook) {
-    console.log(position);
-    var directionsDisplay = new google.maps.DirectionsRenderer({
+    directionsDisplay = new google.maps.DirectionsRenderer({
       map: map
     });
 
@@ -147,14 +142,12 @@ $(document).ready(function() {
       travelMode: 'WALKING'
     };
 
-    console.log(request.origin);
-
     // Pass the directions request to the directions service.
-    var directionsService = new google.maps.DirectionsService();
+    directionsService = new google.maps.DirectionsService();
     directionsService.route(request, function(response, status) {
       if (status == 'OK') {
         // Display the route on the map.
-        if(routeExist = true) {
+        if (routeExist = true) {
           directionsDisplay.setMap(null);
         } else {
           directionsDisplay.setMap(map);
@@ -186,15 +179,3 @@ $(document).ready(function() {
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,6 +8,22 @@ body, html {
 
 }
 
+.errorOverlay {
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index:99999;
+
+	p {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		text-align: center;
+		font-size: 30px;
+	}
+}
+
 #sidebar {
 		width: 40%;
 		height: 100%;
@@ -23,6 +39,7 @@ body, html {
 
 
 .logoBlock{
+	background-color: #6872D8;
 	width: 100%;
 	padding: 30px 10px;
 	text-align: center;
@@ -49,32 +66,34 @@ body, html {
 }
 
 #sidebar #placesList .place {
-		border-bottom: 1px solid white;
 		cursor: pointer;
 		list-style-type: none;
 		text-align: center;
 		padding: 40px 0;
-		height: 50;
-
-
-
 }
 
-#placesList li{
+
+#placesList{
+		li{
 	width: 50%;
 	/*display: inline-block;*/
 	float: left;
-	border: solid white 1px;
-	text-overflow: ellipsis;
-	/*height: 80px;*/
-
-	
+	/*border: solid white 1px;*/
+	color: #5756A8;
+	background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, white 50%, #6872D8 50%);
+	transition: all 0.2s;
+}
+	:hover{
+		background-position: 0 -100%;
+		color: white;
+	}
 }
 
 #placeInfo {
 		display: none;
 		position: relative;
-		overflow: scroll;
+		overflow-y: scroll;
 		z-index: 1;
 		width: 40%;
 		height: 100%;
@@ -170,10 +189,6 @@ body, html {
 		height: 100%;
 		float: left;
 		background-color: white;
-}
-
-#sidebar{
-	background-color: #6872D8;
 }
 
 #placeInfo{

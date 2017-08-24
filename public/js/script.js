@@ -19,6 +19,7 @@ if (navigator.geolocation) {
       "lng": position.coords.longitude
     };
     console.log(userLocation);
+    $(".errorOverlay").fadeOut();
   })
 } else {
   console.log("Browser does not support geolocation");

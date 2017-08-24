@@ -4,7 +4,6 @@ body, html {
 		box-sizing: border-box;
 		font-family: 'Open Sans', sans-serif;
 		height: 100%;
-		color: white;
 }
 
 #sidebar {
@@ -26,7 +25,7 @@ body, html {
 
 #sidebar hr {
 		margin-bottom: 0px;
-		border-top: 2px solid white;
+		border-top: 2px solid grey;
 }
 
 #sidebar #placesList {
@@ -35,7 +34,7 @@ body, html {
 }
 
 #sidebar #placesList .place {
-		border-bottom: 1px solid white;
+		border-bottom: 1px solid grey;
 		cursor: pointer;
 		list-style-type: none;
 		text-align: center;
@@ -77,16 +76,7 @@ body, html {
 #placeInfo .container #placeTitle {
 		margin: 0;
 		padding: 20px;
-		border-bottom: 2px solid white;
-}
-
-#placeInfo .container p#placeDescription {
-		width: 80%;
-		margin: 30px auto;
-}
-
-#placeInfo .container hr {
-		margin: 0px;
+		border-bottom: 2px solid grey;
 }
 
 #placeInfo .container p#placeDescription {
@@ -111,12 +101,7 @@ body, html {
 #placeInfo .container .rating p.votes {
 		margin-top: -7px;
 		font-size: 12px;
-		color: white;
-}
-
-#placeInfo .container .price {
-		width: 80%;
-		margin: 30px auto;
+		color: grey;
 }
 
 #placeInfo .container .price {
@@ -125,7 +110,7 @@ body, html {
 }
 
 #placeInfo .container .price #price {
-		color: #68D0EA;
+		color: green;
 		font-size: 26px;
 }
 
@@ -143,114 +128,118 @@ body, html {
 		background-color: white;
 }
 
-#sidebar{
-	background-color: #6872D8;
+#sidebar {
+		background-color: #6872D8;
 }
 
-#placeInfo{
-	background-color: #6872D8;
+#placeInfo {
+		background-color: #6872D8;
 }
 
-#backToList{
-	background-color: #5756A8;
-}
-#backToList:hover{
-	background-color: white;
+#backToList {
+		background-color: #5756A8;
 }
 
-.btn-default {
-	color: white;
-	border: none;
-}
-
-.btn-default:hover {
-	color: #5756A8;
-}
-
-button{
-	color: white;
-}
-
-#sidebar{
-	background-color: #6872D8;
-}
-
-#placeInfo{
-	background-color: #6872D8;
-}
-
-#backToList{
-	background-color: #5756A8;
-}
-#backToList:hover{
-	background-color: white;
+#backToList:hover {
+		background-color: white;
 }
 
 .btn-default {
-	color: white;
-	border: none;
+		color: white;
+		border: none;
 }
 
 .btn-default:hover {
-	color: #5756A8;
+		color: #5756A8;
 }
 
-button{
-	color: white;
+button {
+		color: white;
 }
 
-#sidebar{
-	background-color: #6872D8;
+#sidebar {
+		background-color: #6872D8;
 }
 
-#placeInfo{
-	background-color: #6872D8;
+#placeInfo {
+		background-color: #6872D8;
 }
 
-#backToList{
-	background-color: #5756A8;
+#backToList {
+		background-color: #5756A8;
 }
-#backToList:hover{
-	background-color: white;
+
+#backToList:hover {
+		background-color: white;
 }
 
 .btn-default {
-	color: white;
-	border: none;
+		color: white;
+		border: none;
 }
 
 .btn-default:hover {
-	color: #5756A8;
+		color: #5756A8;
 }
 
-button{
-	color: white;
+button {
+		color: white;
 }
 
-#sidebar{
-	background-color: #6872D8;
+#sidebar {
+		background-color: #6872D8;
 }
 
-#placeInfo{
-	background-color: #6872D8;
+#placeInfo {
+		background-color: #6872D8;
 }
 
-#backToList{
-	background-color: #5756A8;
+#backToList {
+		background-color: #5756A8;
 }
-#backToList:hover{
-	background-color: white;
+
+#backToList:hover {
+		background-color: white;
 }
 
 .btn-default {
-	color: white;
-	border: none;
+		color: white;
+		border: none;
 }
 
 .btn-default:hover {
-	color: #5756A8;
+		color: #5756A8;
 }
 
-button{
-	color: white;
+button {
+		color: white;
+}
+
+#sidebar {
+		background-color: #6872D8;
+}
+
+#placeInfo {
+		background-color: #6872D8;
+}
+
+#backToList {
+		background-color: #5756A8;
+}
+
+#backToList:hover {
+		background-color: white;
+}
+
+.btn-default {
+		color: white;
+		border: none;
+}
+
+.btn-default:hover {
+		color: #5756A8;
+}
+
+button {
+		color: white;
 }

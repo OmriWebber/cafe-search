@@ -89,6 +89,15 @@ body, html {
 		margin: 0px;
 }
 
+#placeInfo .container p#placeDescription {
+		width: 80%;
+		margin: 30px auto;
+}
+
+#placeInfo .container hr {
+		margin: 0px;
+}
+
 #placeInfo .container .rating {
 		margin-bottom: 10px;
 		margin: 30px auto;
@@ -103,6 +112,11 @@ body, html {
 		margin-top: -7px;
 		font-size: 12px;
 		color: white;
+}
+
+#placeInfo .container .price {
+		width: 80%;
+		margin: 30px auto;
 }
 
 #placeInfo .container .price {

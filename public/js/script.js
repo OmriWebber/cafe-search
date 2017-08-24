@@ -100,7 +100,10 @@ $(document).ready(function(){
           $("#rating").text(dataFromFacebook.overall_star_rating);
           $("#totalRatings").text(dataFromFacebook.rating_count);
           $("#price").text(dataFromFacebook.price_range);
+<<<<<<< HEAD
           $("#street").text(dataFromFacebook.location.street);
+=======
+>>>>>>> 26d7c2161f8f00489f4ba6c6adfd2cbc843fb804
           $('#sidebar').removeClass('slideInLeft').delay(100).addClass('slideOutLeft').delay(500).hide();
           $('#placeInfo').removeClass('slideOutRight').delay(100).show().addClass('slideInRight');
           showMarker(position, dataFromFacebook);

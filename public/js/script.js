@@ -23,7 +23,6 @@ $(document).ready(function(){
     dataType: "json",
     success: function(data){
       console.log(data.places);
-      // console.log(dataFromFacebook.location.street);
       for (var i = 0; i < data.places.length; i++) {
         $("#placesList").append("<li class='place'>" + data.places[i].name + "</li>");
       }
